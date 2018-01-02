@@ -23,6 +23,6 @@
     "cweagans/composer-patches": "^1.5.0",
     "drupal/core": "8.4.3",
     "drupal/contacts": "^1.0",
-    "FreelyGive/fg_base_theme": "^1.0"
+    "FreelyGive/fg_base_theme": "1.x-dev"
   }
 }
