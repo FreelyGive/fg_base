@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall hooks for the FG Base install profile.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function delay_repay_install() {
+  $config_factory = \Drupal::configFactory();
+
+  // Set up some site config.
+  $config_factory->getEditable('system.site')
+    ->set('page.403', '/user/login')
+    ->save(TRUE);
+
+  // We install some menu links, so we have to rebuild the router, to ensure the
+  // menu links are valid.
+  \Drupal::service('router.builder')->rebuildIfNeeded();
+}

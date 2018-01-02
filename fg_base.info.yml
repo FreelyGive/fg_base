@@ -1,0 +1,21 @@
+name: FG Base
+type: profile
+description: The FreelyGive base system.
+core: 8.x
+
+distribution:
+  name: FG Base
+
+dependencies:
+  - block
+  - breakpoint
+  - contact
+  - page_cache
+  - dynamic_page_cache
+  - dblog
+  - toolbar
+  - flood_unblock
+
+themes:
+  - fg_base_theme
+  - seven

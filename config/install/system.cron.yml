@@ -1,0 +1,3 @@
+threshold:
+  requirements_warning: 240
+  requirements_error: 480

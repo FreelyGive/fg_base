@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access site-wide contact form'
+  - 'add own passenger profile'
+  - 'add submission entities'
+  - 'edit own passenger profile'
+  - 'view own passenger profile'
+  - 'view published passenger communication entities'
